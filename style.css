@@ -71,13 +71,27 @@ a {
 .nav-link { padding: 0px 12px }
 .nav-link a {
     font-size: 18px;
-    color: var(--text-color);
-    --p: #0000;
-    text-shadow:  -1px -1px var(--p), 1px -1px var(--p), -1px 1px var(--p), 1px 1px var(--p);    
+
+    text-align: center;
+    
+    margin-top: 1vh;
+    
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #3452eb; /* the color */
+    
+
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+    linear-gradient(90deg,var(--c) 50%,var(--text-color) 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+
     transition: 250ms;
 }
 .nav-link a:hover {
-    --p: var(--acent-text-color);
+    --_p: 100%;
 }
 
 /*
