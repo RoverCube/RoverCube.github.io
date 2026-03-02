@@ -3,13 +3,24 @@ body {
     margin: auto;
 }
 
+@font-face {
+    font-family: 'UndefinedMedium'; /*a name to be used later*/
+    src: url('undefined-medium.ttf'); /*URL to font*/
+}
+
+
 * {
-    background-color: #fafafa;
-    color: #0c0c0c;
+    --bg-color: #fafafa;
+    --text-color: #0c0c0c;
+    --acent-text-color: #f2f348;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: UndefinedMedium;
 }
 
 a {
-    color: #0c0c0c;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 16px;
 }
@@ -57,8 +68,16 @@ a {
     margin-left: auto;
 }
 
-.nav-link {
-    padding: 0px 12px;
+.nav-link { padding: 0px 12px }
+.nav-link a {
+    font-size: 18px;
+    color: var(--text-color);
+    --p: #0000;
+    text-shadow:  -1px -1px var(--p), 1px -1px var(--p), -1px 1px var(--p), 1px 1px var(--p);    
+    transition: 250ms;
+}
+.nav-link a:hover {
+    --p: var(--acent-text-color);
 }
 
 /*
