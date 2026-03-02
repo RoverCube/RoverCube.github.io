@@ -12,7 +12,7 @@ body {
 * {
     --bg-color: #fafafa;
     --text-color: #0c0c0c;
-    --acent-text-color: #f2f348;
+    --accent-color: #3452eb;
 
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -55,10 +55,17 @@ a {
     display: flex;
     height: auto;
 
+    text-align: center;
+    align-items: center;
+
     margin-right: auto;
 }
 .nav-logo img {
     width: 64px;
+}
+.nav-logo-text {
+    margin: 0px 16px;
+    font-size: 24px;
 }
 
 .nav-menu {
@@ -72,14 +79,12 @@ a {
 .nav-link a {
     font-size: 18px;
 
-    text-align: center;
-    
+    text-align: center;    
     margin-top: 1vh;
     
     --s: 0.1em;   /* the thickness of the line */
-    --c: #3452eb; /* the color */
+    --c: var(--accent-color); /* the color */
     
-
     color: #0000;
     padding-bottom: var(--s);
     background: 
@@ -90,9 +95,7 @@ a {
 
     transition: 250ms;
 }
-.nav-link a:hover {
-    --_p: 100%;
-}
+.nav-link a:hover { --_p: 100% }
 
 /*
 #93c8fe
