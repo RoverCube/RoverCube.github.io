@@ -1,14 +1,41 @@
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
 .nav-container {
+    width: 90%;
     text-align: center;
     align-items: center;
-    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
 }
 
 .nav-logo {
     float: left;
+    display: flex;
+    height: auto;
+
+    margin-right: auto;
+}
+.nav-logo img {
+    width: 64px;
 }
 
 .nav-menu {
     float: right;
+    display: flex;
+    
+    margin-left: auto;
 }
+
+.nav-link {
+    padding: 0px 12px;
+}
+
+/*
+#93c8fe
+#5fd78b
+#fe8178*/
