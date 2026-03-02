@@ -62,6 +62,8 @@ a {
 }
 .nav-logo img {
     width: 64px;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 .nav-logo-text {
     margin: 0px 16px;
@@ -74,7 +76,6 @@ a {
     
     margin-left: auto;
 }
-
 .nav-link { padding: 0px 12px }
 .nav-link a {
     font-size: 18px;
