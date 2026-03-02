@@ -8,7 +8,6 @@ body {
     src: url('undefined-medium.ttf'); /*URL to font*/
 }
 
-
 * {
     --bg-color: #fafafa;
     --text-color: #0c0c0c;
@@ -26,11 +25,58 @@ a {
 /**= Sections =**/
 .home-section {
     display: flex;
-    height: 700px;
+    flex-direction: column;
     color: var(--bg-color);
     background-color: var(--text-color);
 }
+.home-section h1 {
+    align-self: center;
+    color: var(--bg-color);
+}
+/**= Portifolio =**/
+.port-information {
+    margin: 8px 10%;
+    color: var(--bg-color);
+}
+.port-information p {
+    color: inherit;
+}
+.port-information h1 {
+    margin-top: 8px;
+    font-size: 24px;
+    color: inherit;
+}
+.port-information ul li {
+    color: var(--bg-color);
+}
+.port-galery {
+    column-count: 4;
+    column-gap: 0px;
+    column-span: all;
 
+    align-items: center;
+    padding: 14px;
+}
+.port-iten {
+    padding: 4px;
+    margin: 2px;
+
+    display: inherit;
+
+    background: #0000;
+    transition: 250ms;
+}
+.port-iten:hover { background: var(--accent-color) }
+.port-iten img {
+    width: 100%;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+.port-iten p {
+    margin: 0px;
+    color: var(--bg-color);
+}
+/**= Socials =**/
 .socials-section {
     display: flex;
     height: 700px;
@@ -39,13 +85,11 @@ a {
     align-items: center;
     justify-content: center;
 }
-
 .socials-border {
     padding: 32px;
 
     border: solid var(--bg-color) 2px;
 }
-
 .socials-border a {
     text-align: center;    
     margin-top: 1vh;
@@ -55,16 +99,15 @@ a {
     
     color: var(--bg-color);
     padding-bottom: var(--s);
-    background: 
-    linear-gradient(90deg,var(--c) 50%,var(--text-color) 0) calc(100% - var(--_p,0%))/200% 100%,
-      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    background: linear-gradient(90deg,var(--c) 50%,var(--text-color) 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    
     -webkit-background-clip: text,padding-box;
             background-clip: text,padding-box;
 
     transition: 250ms;
 }
 .socials-border a:hover { --_p: 100% }
-
 .social-img {
     width: 64px;
     height: auto;
@@ -86,7 +129,6 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
 .nav-logo {
     float: left;
     display: flex;
@@ -106,7 +148,6 @@ a {
     margin: 0px 16px;
     font-size: 24px;
 }
-
 .nav-menu {
     float: right;
     display: flex;
