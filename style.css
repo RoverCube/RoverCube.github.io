@@ -33,6 +33,12 @@ a {
     align-self: center;
     color: var(--bg-color);
 }
+.home-section h2 {
+    align-self: center;
+    color: var(--bg-color);
+    font-size: 22px;
+    margin: 0px;
+}
 /**= Portifolio =**/
 .port-information {
     margin: 8px 10%;
@@ -50,27 +56,36 @@ a {
     color: var(--bg-color);
 }
 .port-galery {
-    column-count: 4;
-    column-gap: 0px;
-    column-span: all;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 
     align-items: center;
     padding: 14px;
+    justify-content: center;
 }
 .port-iten {
     padding: 4px;
     margin: 2px;
 
-    display: inherit;
+    width: auto;
+    height: auto;
 
     background: #0000;
     transition: 250ms;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 .port-iten:hover { background: var(--accent-color) }
 .port-iten img {
-    width: 100%;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
+}
+.port-wip {
+    color: var(--accent-color);
 }
 .port-iten p {
     margin: 0px;
