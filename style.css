@@ -26,6 +26,7 @@ a {
 .home-section {
     display: flex;
     flex-direction: column;
+    height: fit-content;
     color: var(--bg-color);
     background-color: var(--text-color);
 }
