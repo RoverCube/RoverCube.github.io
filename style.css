@@ -17,8 +17,7 @@ body {
 }
 
 a {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--accent);
     font-size: 16px;
 }
 
@@ -29,6 +28,9 @@ a {
     height:max-content;
     color: var(--bg-color);
     background-color: var(--text-color);
+}
+.home-section div {
+    color: var(--bg-color);
 }
 .home-section h1 {
     align-self: center;
