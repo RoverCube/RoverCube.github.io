@@ -56,6 +56,23 @@ a {
 .port-information ul li {
     color: var(--bg-color);
 }
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 14px;
+}
+.skills div {
+    margin: 0px 35px 10px 0px;
+}
+.skills li {
+    margin: 0px 35px 0px 0px;
+}
+.skills ul {
+    display: flex;
+    flex-direction: column;
+}
 .port-galery {
     display: flex;
     flex-wrap: wrap;
